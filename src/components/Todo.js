@@ -1,5 +1,7 @@
 const Todo = ({ todo, todos, text, setTodos }) => {
 	const deleteHandler = () => {
+        let confirm = window.confirm('Are you sure?')
+        if(confirm)
 		setTodos(todos.filter((el) => el.id !== todo.id))
 	}
 	const completeHandler = () => {
