@@ -2,7 +2,7 @@ import React from "react"
 
 const Form = (props) => {
     const inputHandler = (e)=>{
-        console.log(e.target.value)
+        // console.log(e.target.value)
         props.setInput(e.target.value)
     }
     const submitHandler =(e)=>{
@@ -24,7 +24,7 @@ const Form = (props) => {
 				<select onChange={categoryHandler} name="todos" className="filter-todo">
 					<option value="all">All</option>
 					<option value="completed">Completed</option>
-					<option value="uncompleted">Uncompleted</option>
+					<option value="incompleted">incompleted</option>
 				</select>
 			</div>
 		</form>
